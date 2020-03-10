@@ -17,7 +17,5 @@ Route::get('/', function () {
 Route::get('/test', 'DemoController@index');
 
 Route::prefix('/demo')->group(function () {
-    Route::get('/', 'StaticPagesController@home');
-    Route::get('/help', 'StaticPagesController@help');
-    Route::get('/about', 'StaticPagesController@about');
+    Route::get('/test', 'DemoController@test');
 });
